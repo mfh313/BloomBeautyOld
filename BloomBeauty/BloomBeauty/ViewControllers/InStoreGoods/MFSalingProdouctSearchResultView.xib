@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12118"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFSalingProdouctSearchResultView">
+            <rect key="frame" x="0.0" y="0.0" width="658" height="469"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lmc-3C-Nbv" customClass="MFCommodityAvailableSizeView">
+                    <rect key="frame" x="323" y="70" width="275" height="329"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="275" id="AFj-BP-g9B"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bxw-nJ-Hki" customClass="MFCommodityDetailImageView">
+                    <rect key="frame" x="70" y="70" width="203" height="329"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bxw-nJ-Hki" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="70" id="02A-ez-VM2"/>
+                <constraint firstAttribute="bottom" secondItem="Bxw-nJ-Hki" secondAttribute="bottom" constant="70" id="AZC-oZ-P4r"/>
+                <constraint firstItem="Lmc-3C-Nbv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="70" id="Qov-Qb-qMM"/>
+                <constraint firstAttribute="bottom" secondItem="Lmc-3C-Nbv" secondAttribute="bottom" constant="70" id="ack-8H-XLB"/>
+                <constraint firstItem="Lmc-3C-Nbv" firstAttribute="leading" secondItem="Bxw-nJ-Hki" secondAttribute="trailing" constant="50" id="jJz-wX-Wwo"/>
+                <constraint firstItem="Bxw-nJ-Hki" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="70" id="jlK-Df-jZ1"/>
+                <constraint firstAttribute="trailing" secondItem="Lmc-3C-Nbv" secondAttribute="trailing" constant="60" id="yoz-YB-u83"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_detailSizeView" destination="Lmc-3C-Nbv" id="qJN-jj-kNE"/>
+                <outlet property="_imageView" destination="Bxw-nJ-Hki" id="k6i-M1-Qo5"/>
+            </connections>
+            <point key="canvasLocation" x="219" y="-74.5"/>
+        </view>
+    </objects>
+</document>

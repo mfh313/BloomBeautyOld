@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFRoundTextField">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBR-zg-An2" userLabel="背景图">
+                    <rect key="frame" x="0.0" y="3.5" width="368" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="460" id="6EP-JB-mtU"/>
+                        <constraint firstAttribute="height" constant="33" id="bgM-Q1-rCF"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="6EP-JB-mtU"/>
+                        </mask>
+                    </variation>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ah-Z2-J8c">
+                    <rect key="frame" x="15" y="3.5" width="318" height="33"/>
+                    <color key="textColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="pZ2-pE-A8C"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFD-xE-iGC">
+                    <rect key="frame" x="333" y="3.5" width="25" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="1fo-Yb-EuB"/>
+                        <constraint firstAttribute="height" constant="22" id="xft-IF-b3H"/>
+                    </constraints>
+                    <state key="normal" image="delete"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="xft-IF-b3H"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="onClickSmallDeleteBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="zEA-J3-zzz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="6ah-Z2-J8c" firstAttribute="trailing" secondItem="bBR-zg-An2" secondAttribute="trailing" id="7eo-XH-J3l"/>
+                <constraint firstItem="qFD-xE-iGC" firstAttribute="height" secondItem="6ah-Z2-J8c" secondAttribute="height" id="EGN-aV-y6v"/>
+                <constraint firstItem="6ah-Z2-J8c" firstAttribute="top" secondItem="bBR-zg-An2" secondAttribute="top" id="Pap-2Q-dYY"/>
+                <constraint firstItem="qFD-xE-iGC" firstAttribute="trailing" secondItem="6ah-Z2-J8c" secondAttribute="trailing" constant="5" id="ZDB-nN-kyV"/>
+                <constraint firstItem="qFD-xE-iGC" firstAttribute="leading" secondItem="6ah-Z2-J8c" secondAttribute="trailing" id="ZP8-AR-Ztx"/>
+                <constraint firstItem="6ah-Z2-J8c" firstAttribute="bottom" secondItem="bBR-zg-An2" secondAttribute="bottom" id="jie-wh-f1O"/>
+                <constraint firstAttribute="trailing" secondItem="bBR-zg-An2" secondAttribute="trailing" id="lAS-L8-LpF"/>
+                <constraint firstItem="bBR-zg-An2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mL4-IQ-afR"/>
+                <constraint firstItem="bBR-zg-An2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="p3O-kV-PaL"/>
+                <constraint firstItem="6ah-Z2-J8c" firstAttribute="leading" secondItem="bBR-zg-An2" secondAttribute="leading" constant="15" id="t8w-Qn-mKE"/>
+                <constraint firstItem="qFD-xE-iGC" firstAttribute="trailing" secondItem="bBR-zg-An2" secondAttribute="trailing" constant="-10" id="uox-hD-JXk"/>
+                <constraint firstItem="qFD-xE-iGC" firstAttribute="centerY" secondItem="6ah-Z2-J8c" secondAttribute="centerY" id="zh0-my-9Oh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="7eo-XH-J3l"/>
+                    <exclude reference="ZDB-nN-kyV"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="_bgBtn" destination="bBR-zg-An2" id="AwC-Gs-ddz"/>
+                <outlet property="_deleteSmallBtn" destination="qFD-xE-iGC" id="6Cb-MS-4OD"/>
+                <outlet property="_inputTextField" destination="6ah-Z2-J8c" id="2NV-u6-mwv"/>
+            </connections>
+            <point key="canvasLocation" x="282" y="271.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete" width="9" height="9"/>
+    </resources>
+</document>

@@ -1,0 +1,40 @@
+{
+"type": "normalMsg",
+"normalMsg": {
+"valid": "N",
+"title": "通知",
+"content": "各位亲爱的用户，装扮灵即将发布升级，请大家稍等片刻。\n",
+"actionList": [
+"好的"
+]
+},
+"importantNotice": {
+"valid": "Y",
+"title": "重要通知",
+"content": "iOS 10升级重要提醒,请点击更新按钮",
+"actionList": {
+"versionUpdates": {
+"valid": "N",
+"needShow": "Y",
+"nowVersion": "1.0.0.1",
+"forceUpdates": "Y",
+"buttonTitle": "最新版本已发布，为了更好的使用请立即更新"
+}
+}
+},
+"directUpgrade": {
+"valid": "Y",
+"upgradeUrl": "itms-services://?action=download-manifest&url=https://www.eeka.info/bloombeauty/bloombeauty.plist"
+},
+"specifyUpgrade": {
+"valid": "N",
+"keys": [
+"10233",
+"12wewee"
+],
+"upgradeUrl": "itms-services://?action=download-manifest&url=https://www.eeka.info/bloombeauty_test/bloombeauty.plist"
+},
+"clearSDImageCache": {
+"valid": "N"
+}
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFCustomerConsumptionRecordCellHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="551" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tittle2" translatesAutoresizingMaskIntoConstraints="NO" id="JsW-y0-9fp">
+                    <rect key="frame" x="15" y="14" width="4" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="U7t-nm-XpY"/>
+                        <constraint firstAttribute="height" constant="16" id="yue-gG-Djp"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单号：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYd-vg-F22">
+                    <rect key="frame" x="24" y="10" width="48" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="Fqj-rO-aoo"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" id="L1e-r0-yto"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="深圳万象城K店" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rS3-09-zST">
+                    <rect key="frame" x="211" y="10" width="106.5" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" id="1ss-SQ-9SY"/>
+                        <constraint firstAttribute="height" constant="23" id="qH3-pY-yZ5"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-01-11 15:13" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgF-tq-5mn">
+                    <rect key="frame" x="328" y="11" width="200" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="TEG-oP-pGC"/>
+                        <constraint firstAttribute="height" constant="23" id="YZW-wy-jab"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVR-fa-mdw">
+                    <rect key="frame" x="15" y="43" width="521" height="1"/>
+                    <color key="backgroundColor" red="0.1764705882352941" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="aFb-zs-A0s" customClass="MFOnePixLayoutConstraint"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RgF-tq-5mn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="AFx-ws-8o8"/>
+                <constraint firstAttribute="bottom" secondItem="GVR-fa-mdw" secondAttribute="bottom" id="AJs-kd-leC"/>
+                <constraint firstItem="GVR-fa-mdw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Jzb-me-X61"/>
+                <constraint firstItem="DYd-vg-F22" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="N7L-IY-3Zo"/>
+                <constraint firstItem="RgF-tq-5mn" firstAttribute="leading" secondItem="rS3-09-zST" secondAttribute="trailing" constant="10" id="QrO-xW-SKu"/>
+                <constraint firstItem="JsW-y0-9fp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="axg-I7-tHm"/>
+                <constraint firstItem="DYd-vg-F22" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="eNd-Te-Ml7"/>
+                <constraint firstAttribute="trailing" secondItem="RgF-tq-5mn" secondAttribute="trailing" constant="23" id="fed-PM-NzK"/>
+                <constraint firstItem="GVR-fa-mdw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="gTQ-Zj-pJg"/>
+                <constraint firstItem="rS3-09-zST" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gZn-Tv-L0n"/>
+                <constraint firstAttribute="trailing" secondItem="GVR-fa-mdw" secondAttribute="trailing" id="ivH-n0-oQ4"/>
+                <constraint firstItem="DYd-vg-F22" firstAttribute="leading" secondItem="JsW-y0-9fp" secondAttribute="trailing" constant="5" id="sVH-7x-AWK"/>
+                <constraint firstItem="JsW-y0-9fp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zKe-XY-own"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="eNd-Te-Ml7"/>
+                    <exclude reference="ivH-n0-oQ4"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="_consumptionNumberLabel" destination="DYd-vg-F22" id="yoN-a0-l8p"/>
+                <outlet property="_shopNameLabel" destination="rS3-09-zST" id="Gw6-cu-AWc"/>
+                <outlet property="_timeLabel" destination="RgF-tq-5mn" id="eE0-ne-NY1"/>
+            </connections>
+            <point key="canvasLocation" x="355.5" y="59.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tittle2" width="4" height="16"/>
+    </resources>
+</document>

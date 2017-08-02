@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="MFCustomerSearchResultsCell">
+            <rect key="frame" x="0.0" y="0.0" width="558" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="558" height="136.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UxA-4I-Vgu">
+                        <rect key="frame" x="0.0" y="0.0" width="558" height="136"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VX6-SU-xHM" customClass="MFUILongPressImageView">
+                                <rect key="frame" x="15" y="27" width="82" height="82"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="S1d-pJ-esk"/>
+                                    <constraint firstAttribute="height" constant="82" id="WqB-MS-XJd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ym-wF-zEA">
+                                <rect key="frame" x="117" y="38" width="32" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.1764705882352941" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普通VIP (K)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZI-tv-kuh">
+                                <rect key="frame" x="117" y="77" width="87" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DF6-w4-UXQ"/>
+                                    <constraint firstAttribute="width" constant="87" id="vXA-QZ-9Yg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已诊断" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfN-MA-Hm5">
+                                <rect key="frame" x="234" y="78" width="51" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="jut-0b-rlJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25H-ZB-rTn" userLabel="再次诊断">
+                                <rect key="frame" x="350" y="70.5" width="150" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="lqG-qX-6gB"/>
+                                    <constraint firstAttribute="width" constant="150" id="zkW-PL-1DA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="-24" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="再次诊断" image="eye">
+                                    <color key="titleColor" red="0.9137254901960784" green="0.2196078431372549" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickAnalysis:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Cfs-ml-eW7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="CZI-tv-kuh" firstAttribute="leading" secondItem="7ym-wF-zEA" secondAttribute="leading" id="2Tt-A9-N2l"/>
+                            <constraint firstItem="CZI-tv-kuh" firstAttribute="centerY" secondItem="VX6-SU-xHM" secondAttribute="centerY" constant="20" id="8TW-xl-30v"/>
+                            <constraint firstItem="7ym-wF-zEA" firstAttribute="centerY" secondItem="VX6-SU-xHM" secondAttribute="centerY" constant="-20" id="8aB-vs-BEf"/>
+                            <constraint firstItem="25H-ZB-rTn" firstAttribute="leading" secondItem="pfN-MA-Hm5" secondAttribute="trailing" constant="65" id="IgB-qH-DLT"/>
+                            <constraint firstItem="VX6-SU-xHM" firstAttribute="centerY" secondItem="UxA-4I-Vgu" secondAttribute="centerY" id="Qpi-44-QMn"/>
+                            <constraint firstItem="pfN-MA-Hm5" firstAttribute="centerY" secondItem="CZI-tv-kuh" secondAttribute="centerY" id="SGS-6K-vO5"/>
+                            <constraint firstItem="7ym-wF-zEA" firstAttribute="leading" secondItem="VX6-SU-xHM" secondAttribute="trailing" constant="20" id="Trm-c4-hMj"/>
+                            <constraint firstItem="pfN-MA-Hm5" firstAttribute="leading" secondItem="CZI-tv-kuh" secondAttribute="trailing" constant="30" id="f9H-Tc-P0c"/>
+                            <constraint firstItem="VX6-SU-xHM" firstAttribute="leading" secondItem="UxA-4I-Vgu" secondAttribute="leading" constant="15" id="w26-nG-DAK"/>
+                            <constraint firstItem="25H-ZB-rTn" firstAttribute="centerY" secondItem="pfN-MA-Hm5" secondAttribute="centerY" id="wLB-jm-Gd9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="UxA-4I-Vgu" secondAttribute="leading" id="25W-KJ-IJH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="UxA-4I-Vgu" secondAttribute="trailing" id="8vy-DW-OK9"/>
+                    <constraint firstAttribute="topMargin" secondItem="UxA-4I-Vgu" secondAttribute="top" id="Jtr-WG-7ow"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="UxA-4I-Vgu" secondAttribute="bottom" id="UeK-z8-ffa"/>
+                </constraints>
+                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="_analysisBtn" destination="25H-ZB-rTn" id="WN6-tm-ecO"/>
+                <outlet property="_analysisStatusLabel" destination="pfN-MA-Hm5" id="4Wl-eQ-Hxc"/>
+                <outlet property="_headImageView" destination="VX6-SU-xHM" id="DX2-sQ-z6c"/>
+                <outlet property="_memeberLevelLabel" destination="CZI-tv-kuh" id="Nbr-4g-d3k"/>
+                <outlet property="_nameLabel" destination="7ym-wF-zEA" id="xIa-jl-ucp"/>
+            </connections>
+            <point key="canvasLocation" x="426" y="288.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="eye" width="21" height="13"/>
+    </resources>
+</document>

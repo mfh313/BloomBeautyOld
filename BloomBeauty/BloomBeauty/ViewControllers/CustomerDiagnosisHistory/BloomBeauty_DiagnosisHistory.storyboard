@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Diagnosis History View Controller-->
+        <scene sceneID="yG1-mA-Gxv">
+            <objects>
+                <viewController storyboardIdentifier="MFDiagnosisHistoryViewController" id="bbp-In-Rdo" customClass="MFDiagnosisHistoryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cx5-vk-a01"/>
+                        <viewControllerLayoutGuide type="bottom" id="Diu-NS-OOd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RuU-40-aC8">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZN8-mB-HkI">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="bbp-In-Rdo" id="TWX-fT-fbF"/>
+                                    <outlet property="delegate" destination="bbp-In-Rdo" id="er7-PZ-IYK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZN8-mB-HkI" firstAttribute="top" secondItem="Cx5-vk-a01" secondAttribute="bottom" id="2tE-JY-2xY"/>
+                            <constraint firstItem="Diu-NS-OOd" firstAttribute="top" secondItem="ZN8-mB-HkI" secondAttribute="bottom" id="FQd-Ye-FBh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZN8-mB-HkI" secondAttribute="trailing" id="e2N-Lf-Pi1"/>
+                            <constraint firstItem="ZN8-mB-HkI" firstAttribute="leading" secondItem="RuU-40-aC8" secondAttribute="leadingMargin" constant="10" id="l7D-BT-Vzd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="_tableView" destination="ZN8-mB-HkI" id="dzQ-EI-ALR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="loP-t2-hYW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347" y="359"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,33 @@
+{
+    "nowVersion": "1.4.0",
+    "history": [
+                {
+                "version": "1.0.0",
+                "jsonUrl": "http://bloombeauty-fileserver.eeka.info/diagnosticData/1.0.0/diagnosticData_1.json"
+                },
+                {
+                "version": "1.0.1",
+                "jsonUrl": "http://bloombeauty-fileserver.eeka.info/diagnosticData/1.0.1/diagnosticData.json"
+                },
+                {
+                "version": "1.2.0",
+                "jsonUrl": "http://bloombeauty-fileserver.eeka.info/diagnosticData/1.2.0/diagnosticData.json"
+                },
+                {
+                "version": "1.3.1",
+                "jsonUrl": "http://bloombeauty-fileserver.eeka.info/diagnosticData/1.3.1/diagnosticData.json"
+                },
+                {
+                "version": "1.3.2",
+                "jsonUrl": "http://bloombeauty-fileserver.eeka.info/diagnosticData/1.3.2/diagnosticData.json"
+                },
+                {
+                "version": "1.3.3",
+                "jsonUrl": "http://bloombeauty-fileserver.eeka.info/diagnosticData/1.3.3/diagnosticData.json"
+                },
+                {
+                "version": "1.4.0",
+                "jsonUrl": "http://bloombeauty-fileserver.eeka.info/diagnosticData/1.4.0/diagnosticData.json"
+                }
+                ]
+}

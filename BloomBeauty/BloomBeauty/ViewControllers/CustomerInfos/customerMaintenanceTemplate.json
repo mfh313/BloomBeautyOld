@@ -1,0 +1,297 @@
+{
+    "version": "1.0",
+    "contents": [
+                 {
+                 "title": "一、购买偏好",
+                 "titleDesc": "顾客的购买偏好",
+                 "multiContents": "Y",
+                 "contentArray": [
+                                  {
+                                  "questionNumber": "1",
+                                  "multipleChoice": "Y",
+                                  "title": "1、您喜欢购买的服装风格？",
+                                  "titleRemark": "（可多选）",
+                                  "titleDesc": "您喜欢购买的服装风格",
+                                  "questions": [
+                                                {
+                                                "title": "A、传统经典",
+                                                "description": "传统经典",
+                                                "matchContent": "A"
+                                                },
+                                                {
+                                                "title": "B、简洁干练",
+                                                "description": "简洁干练",
+                                                "matchContent": "B"
+                                                },
+                                                {
+                                                "title": "C、优雅女人味",
+                                                "description": "优雅女人味",
+                                                "matchContent": "C"
+                                                },
+                                                {
+                                                "title": "D、大气沉稳",
+                                                "description": "大气沉稳",
+                                                "matchContent": "D"
+                                                }
+                                                ]
+                                  },
+                                  {
+                                  "questionNumber": "2",
+                                  "title": "2、您更喜欢穿？",
+                                  "titleDesc": "您更喜欢穿",
+                                  "questions": [
+                                                {
+                                                "title": "A、花色",
+                                                "description": "花色",
+                                                "matchContent": "A"
+                                                },
+                                                {
+                                                "title": "B、素色",
+                                                "description": "素色",
+                                                "matchContent": "B"
+                                                },
+                                                {
+                                                "title": "C、花色素色都可",
+                                                "description": "花色素色都可",
+                                                "matchContent": "C"
+                                                }
+                                                ]
+                                  },
+                                  {
+                                  "questionNumber": "3",
+                                  "multipleChoice": "Y",
+                                  "title": "3、您喜欢的花型？",
+                                  "titleRemark": "（可多选）",
+                                  "titleDesc": "您喜欢的花型",
+                                  "questions": [
+                                                {
+                                                "title": "A、花卉类",
+                                                "description": "花卉类",
+                                                "matchContent": "A"
+                                                },
+                                                {
+                                                "title": "B、几何/条纹",
+                                                "description": "几何/条纹 ",
+                                                "matchContent": "B"
+                                                }
+                                                ]
+                                  },
+                                  {
+                                  "questionNumber": "4",
+                                  "multipleChoice": "Y",
+                                  "title": "4、您喜欢的服装身型？",
+                                  "titleRemark": "（可多选）",
+                                  "titleDesc": "您喜欢的服装身型",
+                                  "questions": [
+                                                {
+                                                "title": "A、X型",
+                                                "description": "X型",
+                                                "matchContent": "A"
+                                                },
+                                                {
+                                                "title": "B、H型",
+                                                "description": "H型",
+                                                "matchContent": "B"
+                                                },
+                                                {
+                                                "title": "C、A型",
+                                                "description": "A型",
+                                                "matchContent": "C"
+                                                },
+                                                {
+                                                "title": "D、小H型",
+                                                "description": "小H型",
+                                                "matchContent": "D"
+                                                },
+                                                {
+                                                "title": "E、S型",
+                                                "description": "S型",
+                                                "matchContent": "E"
+                                                }
+                                                ]
+                                  },
+                                  {
+                                  "questionNumber": "5",
+                                  "title": "5、您更喜欢穿？",
+                                  "titleDesc": "您更喜欢穿",
+                                  "questions": [
+                                                {
+                                                "title": "A、深色",
+                                                "description": "深色",
+                                                "matchContent": "A"
+                                                },
+                                                {
+                                                "title": "B、浅色",
+                                                "description": "浅色",
+                                                "matchContent": "B"
+                                                },
+                                                {
+                                                "title": "C、深色浅色都可",
+                                                "description": "深色浅色都可",
+                                                "matchContent": "C"
+                                                }
+                                                ]
+                                  },
+                                  {
+                                  "questionNumber": "6",
+                                  "title": "6、您喜欢穿？",
+                                  "titleDesc": "您喜欢穿",
+                                  "questions": [
+                                                {
+                                                "title": "A、鲜艳醒目的颜色",
+                                                "description": "鲜艳醒目的颜色",
+                                                "matchContent": "A"
+                                                },
+                                                {
+                                                "title": "B、柔和雅致的颜色",
+                                                "description": "柔和雅致的颜色",
+                                                "matchContent": "B"
+                                                },
+                                                {
+                                                "title": "C、鲜艳色、柔和色都可",
+                                                "description": "鲜艳色、柔和色都可",
+                                                "matchContent": "C"
+                                                }
+                                                ]
+                                  },
+                                  {
+                                  "questionNumber": "7",
+                                  "title": "7、您是否只穿天然纤维（棉麻丝毛）的面料？ ",
+                                  "titleDesc": "您是否只穿天然纤维（棉麻丝毛）的面料",
+                                  "questions": [
+                                                {
+                                                "title": "A、是",
+                                                "description": "是",
+                                                "matchContent": "A"
+                                                },
+                                                {
+                                                "title": "B、否",
+                                                "description": "否",
+                                                "matchContent": "B"
+                                                }
+                                                ]
+                                  },
+                                  {
+                                  "questionNumber": "8",
+                                  "multipleChoice": "Y",
+                                  "title": "8、您喜欢本品牌的哪种品类？",
+                                  "titleRemark": "（可多选）",
+                                  "titleDesc": "您喜欢本品牌的哪种品类",
+                                  "questions": [
+                                                {
+                                                "title": "A、大衣",
+                                                "description": "大衣",
+                                                "matchContent": "A"
+                                                },
+                                                {
+                                                "title": "B、连衣裙",
+                                                "description": "连衣裙",
+                                                "matchContent": "B"
+                                                },
+                                                {
+                                                "title": "C、衬衣",
+                                                "description": "衬衣",
+                                                "matchContent": "C"
+                                                },
+                                                {
+                                                "title": "D、短裙",
+                                                "description": "短裙",
+                                                "matchContent": "D"
+                                                },
+                                                {
+                                                "title": "E、裤子",
+                                                "description": "裤子",
+                                                "matchContent": "E"
+                                                }
+                                                ]
+                                  }
+                                  ]
+                 },
+                 {
+                 "title": "二、顾客的业余爱好",
+                 "titleDesc": "顾客的业余爱好",
+                 "titleRemark": "（可多选）",
+                 "multiContents": "N",
+                 "contentArray": [
+                                  {
+                                  "questionNumber": "9",
+                                  "multipleChoice": "Y",
+                                  "questions": [
+                                                {
+                                                "title": "A、旅游",
+                                                "description": "旅游",
+                                                "matchContent": "A"
+                                                },
+                                                {
+                                                "title": "B、阅读",
+                                                "description": "阅读",
+                                                "matchContent": "B"
+                                                },
+                                                {
+                                                "title": "C、户外旅行",
+                                                "description": "户外旅行",
+                                                "matchContent": "C"
+                                                },
+                                                {
+                                                "title": "D、健身",
+                                                "description": "健身",
+                                                "matchContent": "D"
+                                                },
+                                                {
+                                                "title": "E、做手工",
+                                                "description": "做手工",
+                                                "matchContent": "E"
+                                                },
+                                                {
+                                                "title": "F、美容",
+                                                "description": "美容",
+                                                "matchContent": "F"
+                                                },
+                                                {
+                                                "title": "G、参加时尚沙龙",
+                                                "description": "参加时尚沙龙",
+                                                "matchContent": "G"
+                                                }
+                                                ]
+                                  }
+                                  ]
+                 },
+                 {
+                 "title": "三、顾客的心理需求",
+                 "titleDesc": "顾客的心理需求",
+                 "multiContents": "N",
+                 "contentArray": [
+                                  {
+                                  "questionNumber": "10",
+                                  "questions": [
+                                                {
+                                                "title": "A、小众前卫",
+                                                "description": "小众前卫",
+                                                "matchContent": "A"
+                                                },
+                                                {
+                                                "title": "B、时尚引领",
+                                                "description": "时尚引领",
+                                                "matchContent": "B"
+                                                },
+                                                {
+                                                "title": "C、时尚追随",
+                                                "description": "时尚追随",
+                                                "matchContent": "C"
+                                                },
+                                                {
+                                                "title": "D、彰显优越",
+                                                "description": "彰显优越",
+                                                "matchContent": "D"
+                                                },
+                                                {
+                                                "title": "E、低调内敛",
+                                                "description": "低调内敛",
+                                                "matchContent": "E"
+                                                }
+                                                ]
+                                  }
+                                  ]
+                 }
+                 ]
+}

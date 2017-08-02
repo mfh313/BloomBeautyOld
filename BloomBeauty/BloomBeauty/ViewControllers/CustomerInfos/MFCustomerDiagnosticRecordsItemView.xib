@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFCustomerDiagnosticRecordsItemView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="行号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4he-8p-dh1">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="i2d-Gp-uyj"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.30980392156862746" green="0.31764705882352939" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="诊断日期" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="tDg-p2-xEc">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="JAj-PE-DKX"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="JAj-PE-DKX"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店铺" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CW-j3-4jz">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="uYE-ZU-ZW7"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="uYE-ZU-ZW7"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="导购" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykY-8K-WxE">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="F7X-3x-hLD"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="F7X-3x-hLD"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhm-R4-Y2G">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="88" id="kMS-ew-hho"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="操作">
+                        <color key="titleColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="kMS-ew-hho"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="onClickHandleBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="AAi-Ot-HTQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4he-8p-dh1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0gf-EP-Xs3"/>
+                <constraint firstAttribute="bottom" secondItem="6CW-j3-4jz" secondAttribute="bottom" id="1mI-Rp-CLx"/>
+                <constraint firstAttribute="bottom" secondItem="4he-8p-dh1" secondAttribute="bottom" id="5lY-qd-UiD"/>
+                <constraint firstItem="tDg-p2-xEc" firstAttribute="width" secondItem="fhm-R4-Y2G" secondAttribute="width" id="BT3-XX-iIi"/>
+                <constraint firstItem="tDg-p2-xEc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BTO-dV-h5w"/>
+                <constraint firstAttribute="trailing" secondItem="fhm-R4-Y2G" secondAttribute="trailing" id="Dsu-WS-A64"/>
+                <constraint firstItem="ykY-8K-WxE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Hwd-Tr-Crs"/>
+                <constraint firstItem="fhm-R4-Y2G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JDK-pd-QpP"/>
+                <constraint firstItem="fhm-R4-Y2G" firstAttribute="leading" secondItem="ykY-8K-WxE" secondAttribute="trailing" constant="5" id="OOC-VS-Lbv"/>
+                <constraint firstAttribute="bottom" secondItem="tDg-p2-xEc" secondAttribute="bottom" id="Qv1-mC-hvd"/>
+                <constraint firstItem="6CW-j3-4jz" firstAttribute="leading" secondItem="tDg-p2-xEc" secondAttribute="trailing" id="VyW-ki-5hQ"/>
+                <constraint firstItem="ykY-8K-WxE" firstAttribute="leading" secondItem="6CW-j3-4jz" secondAttribute="trailing" constant="5" id="Zf8-pg-dDo"/>
+                <constraint firstItem="6CW-j3-4jz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bdD-RT-7A7"/>
+                <constraint firstAttribute="bottom" secondItem="fhm-R4-Y2G" secondAttribute="bottom" id="hcz-Lb-1iH"/>
+                <constraint firstItem="tDg-p2-xEc" firstAttribute="width" secondItem="ykY-8K-WxE" secondAttribute="width" id="iEN-Gx-Gk6"/>
+                <constraint firstItem="tDg-p2-xEc" firstAttribute="width" secondItem="6CW-j3-4jz" secondAttribute="width" id="o8p-0p-wvl"/>
+                <constraint firstItem="4he-8p-dh1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qW0-zA-ORa"/>
+                <constraint firstItem="tDg-p2-xEc" firstAttribute="leading" secondItem="4he-8p-dh1" secondAttribute="trailing" constant="5" id="qXp-Qd-3Ko"/>
+                <constraint firstAttribute="bottom" secondItem="ykY-8K-WxE" secondAttribute="bottom" id="zAz-CT-EFh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_DiagnosticDateLabel" destination="tDg-p2-xEc" id="Ih8-X5-0B4"/>
+                <outlet property="_entityNameLabel" destination="6CW-j3-4jz" id="74u-fa-22G"/>
+                <outlet property="_handeBtn" destination="fhm-R4-Y2G" id="N8T-bx-OEL"/>
+                <outlet property="_lineNumberLabel" destination="4he-8p-dh1" id="IcO-s3-U1y"/>
+                <outlet property="_shopingGuideNameLabel" destination="ykY-8K-WxE" id="yIJ-N5-8R6"/>
+            </connections>
+        </view>
+    </objects>
+</document>

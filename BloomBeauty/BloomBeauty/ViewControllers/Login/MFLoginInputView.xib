@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFLoginInputView">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="115"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zbl27" translatesAutoresizingMaskIntoConstraints="NO" id="5Pl-tT-1VS">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="18" id="H0l-NO-4rQ"/>
+                        <constraint firstAttribute="height" constant="20" id="g2h-od-jGc"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zbl28" translatesAutoresizingMaskIntoConstraints="NO" id="set-1j-LhD">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="7bF-vr-VQk"/>
+                        <constraint firstAttribute="height" constant="20" id="zaf-B6-oXd"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="O8K-gL-Mgs">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ixr-wV-KQI"/>
+                    </constraints>
+                    <color key="textColor" red="0.1764705882352941" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="ucb-ZC-6Mm"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ajV-7d-TuY">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="wuY-wN-xgF"/>
+                    </constraints>
+                    <color key="textColor" red="0.1764705882" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="FOd-pG-b0B"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEU-Od-DUt" userLabel="下拉选择按钮">
+                    <color key="backgroundColor" red="0.85882352939999995" green="0.18039215689999999" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="72" id="bmU-hD-RC9"/>
+                    </constraints>
+                    <connections>
+                        <action selector="showRecentUserList:" destination="iN0-l3-epB" eventType="touchUpInside" id="Gfb-R5-4Sf"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQe-Ca-Fgp" userLabel="线">
+                    <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="NPA-N2-WXg" customClass="MFOnePixLayoutConstraint"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cW9-Kd-Ebx" userLabel="线">
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="IhT-7O-1ci" customClass="MFOnePixLayoutConstraint"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oEU-Od-DUt" secondAttribute="trailing" id="1V0-f7-qp3"/>
+                <constraint firstItem="O8K-gL-Mgs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="3L8-f4-sI5"/>
+                <constraint firstItem="cW9-Kd-Ebx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3eU-02-5gg"/>
+                <constraint firstAttribute="bottom" secondItem="set-1j-LhD" secondAttribute="bottom" constant="14" id="5jZ-mZ-z4g"/>
+                <constraint firstItem="oEU-Od-DUt" firstAttribute="trailing" secondItem="O8K-gL-Mgs" secondAttribute="trailing" id="8lE-xd-Hr4"/>
+                <constraint firstItem="iQe-Ca-Fgp" firstAttribute="top" secondItem="O8K-gL-Mgs" secondAttribute="bottom" constant="1" id="9Jn-Xc-POr"/>
+                <constraint firstAttribute="trailing" secondItem="ajV-7d-TuY" secondAttribute="trailing" constant="8" id="AIo-Iu-q1v"/>
+                <constraint firstItem="ajV-7d-TuY" firstAttribute="leading" secondItem="set-1j-LhD" secondAttribute="trailing" constant="10" id="DrY-1h-iFo"/>
+                <constraint firstItem="O8K-gL-Mgs" firstAttribute="centerY" secondItem="5Pl-tT-1VS" secondAttribute="centerY" id="NZ8-tQ-khH"/>
+                <constraint firstItem="set-1j-LhD" firstAttribute="leading" secondItem="5Pl-tT-1VS" secondAttribute="leading" id="P3a-a9-kog"/>
+                <constraint firstItem="cW9-Kd-Ebx" firstAttribute="top" secondItem="ajV-7d-TuY" secondAttribute="bottom" constant="1" id="QOb-Z2-Itm"/>
+                <constraint firstAttribute="trailing" secondItem="O8K-gL-Mgs" secondAttribute="trailing" constant="8" id="V30-OB-0Xl"/>
+                <constraint firstItem="oEU-Od-DUt" firstAttribute="height" secondItem="O8K-gL-Mgs" secondAttribute="height" id="W6p-9y-shd"/>
+                <constraint firstAttribute="trailing" secondItem="iQe-Ca-Fgp" secondAttribute="trailing" id="Wb7-Sx-2Lf"/>
+                <constraint firstItem="O8K-gL-Mgs" firstAttribute="leading" secondItem="5Pl-tT-1VS" secondAttribute="trailing" constant="10" id="Ywy-b7-swL"/>
+                <constraint firstAttribute="trailing" secondItem="cW9-Kd-Ebx" secondAttribute="trailing" id="iF8-V4-S5B"/>
+                <constraint firstItem="ajV-7d-TuY" firstAttribute="centerY" secondItem="set-1j-LhD" secondAttribute="centerY" id="j47-AK-yRc"/>
+                <constraint firstItem="5Pl-tT-1VS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="kcU-Ym-G0n"/>
+                <constraint firstItem="oEU-Od-DUt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mHV-kr-uIl"/>
+                <constraint firstItem="oEU-Od-DUt" firstAttribute="top" secondItem="O8K-gL-Mgs" secondAttribute="top" id="v9Q-ZI-5oO"/>
+                <constraint firstItem="iQe-Ca-Fgp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wvC-gC-KGR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1V0-f7-qp3"/>
+                    <exclude reference="mHV-kr-uIl"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="_passwordTextField" destination="ajV-7d-TuY" id="b8T-5x-7aT"/>
+                <outlet property="_userNameTextField" destination="O8K-gL-Mgs" id="gDh-d9-cYy"/>
+                <outlet property="userArrawBtn" destination="oEU-Od-DUt" id="v1Z-p2-pGd"/>
+            </connections>
+            <point key="canvasLocation" x="254" y="278.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="zbl27" width="18" height="20"/>
+        <image name="zbl28" width="15" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFCommodityDetailImageView">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="389"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arw-8Z-Tr7">
+                    <rect key="frame" x="0.0" y="0.0" width="386" height="389"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zbl56" translatesAutoresizingMaskIntoConstraints="NO" id="0A5-ni-bbS">
+                            <rect key="frame" x="116" y="117.5" width="154" height="154"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="154" id="ckc-Vl-OPt"/>
+                                <constraint firstAttribute="width" constant="154" id="yKH-E3-4h9"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未上传图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83C-ja-ZB3">
+                            <rect key="frame" x="155" y="301.5" width="76.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.59607843140000005" green="0.59607843140000005" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="0A5-ni-bbS" firstAttribute="centerY" secondItem="arw-8Z-Tr7" secondAttribute="centerY" id="4Z0-6K-G7N"/>
+                        <constraint firstItem="0A5-ni-bbS" firstAttribute="centerX" secondItem="arw-8Z-Tr7" secondAttribute="centerX" id="FGG-TS-2B7"/>
+                        <constraint firstItem="83C-ja-ZB3" firstAttribute="top" secondItem="0A5-ni-bbS" secondAttribute="bottom" constant="30" id="Ws0-YR-zbq"/>
+                        <constraint firstItem="83C-ja-ZB3" firstAttribute="centerX" secondItem="0A5-ni-bbS" secondAttribute="centerX" id="oea-k5-pfq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="arw-8Z-Tr7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LUW-nN-RMa"/>
+                <constraint firstAttribute="trailing" secondItem="arw-8Z-Tr7" secondAttribute="trailing" id="Xa8-FG-F2m"/>
+                <constraint firstItem="arw-8Z-Tr7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iJj-Sa-AI8"/>
+                <constraint firstAttribute="bottom" secondItem="arw-8Z-Tr7" secondAttribute="bottom" id="pEa-Is-hA7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_noImageTipsView" destination="arw-8Z-Tr7" id="tNg-nk-d4C"/>
+            </connections>
+            <point key="canvasLocation" x="-12" y="2"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="zbl56" width="154" height="154"/>
+    </resources>
+</document>

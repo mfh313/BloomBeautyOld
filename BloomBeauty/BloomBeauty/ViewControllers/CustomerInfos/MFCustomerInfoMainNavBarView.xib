@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFCustomerInfoMainNavBarView">
+            <rect key="frame" x="0.0" y="0.0" width="727" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFc-3i-x7W">
+                    <rect key="frame" x="40" y="20" width="74" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="Cwk-Oa-q6G"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="-40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="Back"/>
+                    <connections>
+                        <action selector="onClickBackBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="2FM-DP-fas"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="顾客详情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7O-Ll-2Xp">
+                    <rect key="frame" x="328" y="21" width="70" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCN-g8-gaO">
+                    <rect key="frame" x="449" y="9" width="248" height="47"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jd5-fq-nub">
+                            <rect key="frame" x="0.0" y="13" width="120" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="BdY-tK-zF4"/>
+                                <constraint firstAttribute="height" constant="22" id="Pot-Db-ArT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <state key="normal" title="编辑资料" image="edit">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickEditBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="lAB-Ws-8cT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdZ-mw-TTr">
+                            <rect key="frame" x="128" y="13" width="120" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="4fA-lR-d0p"/>
+                                <constraint firstAttribute="height" constant="22" id="XZS-Fc-Xzj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <state key="normal" title="立刻诊断" image="eye">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickDiagnosisBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="dor-1F-1vf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="3MI-L5-EAy"/>
+                        <constraint firstItem="XdZ-mw-TTr" firstAttribute="centerY" secondItem="jd5-fq-nub" secondAttribute="centerY" id="FcF-M2-nr7"/>
+                        <constraint firstItem="XdZ-mw-TTr" firstAttribute="leading" secondItem="jd5-fq-nub" secondAttribute="trailing" constant="8" id="GAx-4P-E28"/>
+                        <constraint firstAttribute="width" constant="248" id="bY7-Q0-k6T"/>
+                        <constraint firstItem="jd5-fq-nub" firstAttribute="centerY" secondItem="aCN-g8-gaO" secondAttribute="centerY" id="vsP-9w-0Fm"/>
+                        <constraint firstItem="jd5-fq-nub" firstAttribute="leading" secondItem="aCN-g8-gaO" secondAttribute="leading" id="zv1-0f-nMs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.10980392156862745" green="0.11764705882352941" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="O7O-Ll-2Xp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4BM-gd-Vrd"/>
+                <constraint firstItem="hFc-3i-x7W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="ULw-LE-pQc"/>
+                <constraint firstItem="hFc-3i-x7W" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZLc-S4-Qdf"/>
+                <constraint firstItem="aCN-g8-gaO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gmz-bW-i1K"/>
+                <constraint firstItem="O7O-Ll-2Xp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gzV-Ii-Nul"/>
+                <constraint firstAttribute="trailing" secondItem="aCN-g8-gaO" secondAttribute="trailing" constant="30" id="hoL-VZ-K7j"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_diagnosisButton" destination="XdZ-mw-TTr" id="kZk-oV-MkS"/>
+                <outlet property="_editButton" destination="jd5-fq-nub" id="wMj-AA-GfU"/>
+                <outlet property="_titleLabel" destination="O7O-Ll-2Xp" id="aqr-UJ-DDp"/>
+            </connections>
+            <point key="canvasLocation" x="-11.5" y="-131"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Back" width="25" height="25"/>
+        <image name="edit" width="23" height="22"/>
+        <image name="eye" width="23" height="23"/>
+    </resources>
+</document>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MFInstoreGoodsCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="239"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="270" height="239"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndi-fd-P4w" customClass="MFInstoreGoodsItemView">
+                        <rect key="frame" x="0.0" y="0.0" width="270" height="239"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ndi-fd-P4w" secondAttribute="bottom" id="Jhj-6J-sBS"/>
+                <constraint firstAttribute="trailing" secondItem="ndi-fd-P4w" secondAttribute="trailing" id="LfS-nt-e0y"/>
+                <constraint firstItem="ndi-fd-P4w" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="PEh-In-DyF"/>
+                <constraint firstItem="ndi-fd-P4w" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xe1-Zj-AJM"/>
+            </constraints>
+            <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+            <size key="customSize" width="270" height="239"/>
+            <connections>
+                <outlet property="itemView" destination="ndi-fd-P4w" id="mp4-qN-BZJ"/>
+            </connections>
+            <point key="canvasLocation" x="227" y="268.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

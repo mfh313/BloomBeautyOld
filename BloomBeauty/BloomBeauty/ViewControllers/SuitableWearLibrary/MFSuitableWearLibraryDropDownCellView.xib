@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFSuitableWearLibraryDropDownCellView">
+            <rect key="frame" x="0.0" y="0.0" width="312" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Sa-DP-Rve" customClass="MFUIButton">
+                    <rect key="frame" x="0.0" y="0.0" width="312" height="56"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fn-xE-dMq">
+                            <rect key="frame" x="0.0" y="0.0" width="312" height="56"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="0fn-xE-dMq" firstAttribute="leading" secondItem="2Sa-DP-Rve" secondAttribute="leading" id="5JM-tw-w2g"/>
+                        <constraint firstAttribute="bottom" secondItem="0fn-xE-dMq" secondAttribute="bottom" id="C08-wk-j75"/>
+                        <constraint firstItem="0fn-xE-dMq" firstAttribute="top" secondItem="2Sa-DP-Rve" secondAttribute="top" id="pvV-N2-A3X"/>
+                        <constraint firstAttribute="trailing" secondItem="0fn-xE-dMq" secondAttribute="trailing" id="wWG-ON-hXb"/>
+                    </constraints>
+                    <connections>
+                        <action selector="onClickCellView:" destination="iN0-l3-epB" eventType="touchUpInside" id="7y9-bX-3jK"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2Sa-DP-Rve" secondAttribute="bottom" id="2SU-bz-wR1"/>
+                <constraint firstAttribute="trailing" secondItem="2Sa-DP-Rve" secondAttribute="trailing" id="IQX-IY-6ec"/>
+                <constraint firstItem="2Sa-DP-Rve" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IRb-ru-xgV"/>
+                <constraint firstItem="2Sa-DP-Rve" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rZ0-ol-o7w"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_textLabel" destination="0fn-xE-dMq" id="XCq-FY-Yq7"/>
+            </connections>
+            <point key="canvasLocation" x="327" y="56"/>
+        </view>
+    </objects>
+</document>

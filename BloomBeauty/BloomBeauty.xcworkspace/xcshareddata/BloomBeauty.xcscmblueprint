@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "bff810ab-f9d0-084b-8ba0-5bfd0168b3dd++9665",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "bff810ab-f9d0-084b-8ba0-5bfd0168b3dd++9665" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "bff810ab-f9d0-084b-8ba0-5bfd0168b3dd++9665" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "79BDE100-E53B-489B-9B35-291C5A7D5E45",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "bff810ab-f9d0-084b-8ba0-5bfd0168b3dd++9665" : "BloomBeauty_new\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BloomBeauty",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BloomBeauty.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svnserver.naersi.com:8443\/svn\/EEKA",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "bff810ab-f9d0-084b-8ba0-5bfd0168b3dd++9665"
+    }
+  ]
+}

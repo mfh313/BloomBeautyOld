@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFSalingProdouctRightNaviView">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7X-Ja-Bw7">
+                    <rect key="frame" x="198" y="0.0" width="80" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="aBK-cR-Jdj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="筛选" image="screen">
+                        <color key="titleColor" red="0.82352941176470584" green="0.82352941176470584" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m17-7W-tKN">
+                    <rect key="frame" x="283" y="0.0" width="80" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="gBm-eF-SPZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="搜索" image="search_icon2">
+                        <color key="titleColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="m17-7W-tKN" secondAttribute="trailing" id="2cf-5o-b3K"/>
+                <constraint firstItem="z7X-Ja-Bw7" firstAttribute="centerY" secondItem="m17-7W-tKN" secondAttribute="centerY" id="AUp-KI-bLW"/>
+                <constraint firstItem="m17-7W-tKN" firstAttribute="height" secondItem="z7X-Ja-Bw7" secondAttribute="height" id="Ati-Me-ApJ"/>
+                <constraint firstAttribute="bottom" secondItem="m17-7W-tKN" secondAttribute="bottom" id="Pej-cM-xb6"/>
+                <constraint firstItem="m17-7W-tKN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Voj-EA-wBU"/>
+                <constraint firstItem="m17-7W-tKN" firstAttribute="width" secondItem="z7X-Ja-Bw7" secondAttribute="width" id="kU6-FI-MIK"/>
+                <constraint firstItem="m17-7W-tKN" firstAttribute="leading" secondItem="z7X-Ja-Bw7" secondAttribute="trailing" constant="5" id="pgS-H2-dEm"/>
+                <constraint firstItem="m17-7W-tKN" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="s7D-OJ-DIx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="filterBtn" destination="z7X-Ja-Bw7" id="G0g-hU-yTp"/>
+                <outlet property="searchBtn" destination="m17-7W-tKN" id="0gZ-HA-iZ2"/>
+            </connections>
+            <point key="canvasLocation" x="9.5" y="146"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="screen" width="23" height="24"/>
+        <image name="search_icon2" width="23" height="23"/>
+    </resources>
+</document>

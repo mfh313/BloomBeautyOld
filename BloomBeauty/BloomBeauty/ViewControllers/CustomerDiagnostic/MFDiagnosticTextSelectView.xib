@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFDiagnosticTextSelectView">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPZ-r0-MAf">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="14" id="GAr-xo-WEx"/>
+                        <constraint firstAttribute="height" constant="14" id="e5M-bp-20i"/>
+                    </constraints>
+                    <state key="normal" image="zbl34"/>
+                </button>
+                <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uah-Zk-HLV">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" id="nQh-p4-Wz9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Uah-Zk-HLV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7hR-f8-Eqk"/>
+                <constraint firstAttribute="bottom" secondItem="Uah-Zk-HLV" secondAttribute="bottom" id="DfL-Iz-sBK"/>
+                <constraint firstItem="Uah-Zk-HLV" firstAttribute="leading" secondItem="dPZ-r0-MAf" secondAttribute="trailing" constant="5" id="N0H-Kj-XMN"/>
+                <constraint firstAttribute="trailing" secondItem="Uah-Zk-HLV" secondAttribute="trailing" constant="5" id="Vf8-Aw-Bsc"/>
+                <constraint firstItem="dPZ-r0-MAf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="oGa-if-3ny"/>
+                <constraint firstItem="dPZ-r0-MAf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="qp0-gP-N5R"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Vf8-Aw-Bsc"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="_checkBox" destination="dPZ-r0-MAf" id="0Cb-3I-pBx"/>
+                <outlet property="_textLabel" destination="Uah-Zk-HLV" id="XWa-TD-Cfm"/>
+            </connections>
+            <point key="canvasLocation" x="286" y="282"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="zbl34" width="14" height="14"/>
+    </resources>
+</document>

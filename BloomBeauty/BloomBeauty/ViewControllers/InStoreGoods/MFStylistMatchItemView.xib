@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11201"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFStylistMatchItemView">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="315"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0x-l6-daq" customClass="MFUILongPressImageView">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcp-3a-wfE" customClass="MFStylistMatchItemCoverView">
+                    <frame key="frameInset"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="k0x-l6-daq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="36c-wT-cuT"/>
+                <constraint firstAttribute="bottom" secondItem="k0x-l6-daq" secondAttribute="bottom" id="EBT-F6-I36"/>
+                <constraint firstAttribute="trailing" secondItem="k0x-l6-daq" secondAttribute="trailing" constant="320" id="HZW-pf-2Q2"/>
+                <constraint firstItem="k0x-l6-daq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ahP-eP-w1f"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_imageview" destination="k0x-l6-daq" id="vZf-dS-yjn"/>
+                <outlet property="_infoView" destination="xcp-3a-wfE" id="PXq-GJ-l2H"/>
+            </connections>
+            <point key="canvasLocation" x="334" y="116.5"/>
+        </view>
+    </objects>
+</document>

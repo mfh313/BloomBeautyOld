@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MFCustomerSearchHistoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbD-N5-bN9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <connections>
+                            <action selector="onClickItem:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vBp-Ay-bKQ"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50t-wc-k9R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JbD-N5-bN9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="7oD-vg-wjK"/>
+                    <constraint firstItem="JbD-N5-bN9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="9Bo-gY-Pzd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="50t-wc-k9R" secondAttribute="trailing" id="L9c-RM-9RF"/>
+                    <constraint firstItem="50t-wc-k9R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="QFP-mj-geA"/>
+                    <constraint firstItem="50t-wc-k9R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="dzq-cH-KAw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="50t-wc-k9R" secondAttribute="bottom" id="ern-yN-BUv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="JbD-N5-bN9" secondAttribute="trailing" id="tH5-kQ-0wG"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="JbD-N5-bN9" secondAttribute="bottom" id="yEM-sy-2PB"/>
+                </constraints>
+                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="_nameLabel" destination="50t-wc-k9R" id="bbK-FZ-Tdq"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

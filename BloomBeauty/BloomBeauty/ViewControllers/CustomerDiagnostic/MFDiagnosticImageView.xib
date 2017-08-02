@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFDiagnosticImageView">
+            <rect key="frame" x="0.0" y="0.0" width="217" height="205"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehc-xL-K2D" userLabel="图片" customClass="MFUILongPressImageView">
+                    <subviews>
+                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jr-iw-kVf" customClass="MFDiagnosticImageSelectCoverView">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="196" id="4bQ-vB-T8r"/>
+                        <constraint firstAttribute="height" constant="159" id="Jf4-vy-zHr"/>
+                        <constraint firstAttribute="bottom" secondItem="6jr-iw-kVf" secondAttribute="bottom" id="Q5m-bp-4kc"/>
+                        <constraint firstItem="6jr-iw-kVf" firstAttribute="leading" secondItem="ehc-xL-K2D" secondAttribute="leading" constant="-8" id="YZC-2S-bBR"/>
+                        <constraint firstItem="6jr-iw-kVf" firstAttribute="top" secondItem="ehc-xL-K2D" secondAttribute="top" constant="-8" id="fZf-E0-51f"/>
+                        <constraint firstAttribute="trailing" secondItem="6jr-iw-kVf" secondAttribute="trailing" constant="-8" id="gsw-Ak-Qr9"/>
+                    </constraints>
+                </view>
+                <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="描述" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="NdJ-8m-gPN">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="NdJ-8m-gPN" secondAttribute="bottom" constant="5" id="14V-ja-W3K"/>
+                <constraint firstItem="ehc-xL-K2D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="3OI-w0-w9O"/>
+                <constraint firstItem="NdJ-8m-gPN" firstAttribute="top" secondItem="ehc-xL-K2D" secondAttribute="bottom" constant="10" id="6Fb-PO-Caj"/>
+                <constraint firstItem="ehc-xL-K2D" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AVF-Df-a3k"/>
+                <constraint firstItem="NdJ-8m-gPN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="Eag-wj-hQ7"/>
+                <constraint firstItem="NdJ-8m-gPN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qFf-Lp-87g"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="14V-ja-W3K"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="_coverView" destination="6jr-iw-kVf" id="Q9a-8X-zTp"/>
+                <outlet property="_imageHeightConstraint" destination="Jf4-vy-zHr" id="9JR-LF-kuw"/>
+                <outlet property="_imageView" destination="ehc-xL-K2D" id="fg0-Gn-m6e"/>
+                <outlet property="_imageWidthLayout" destination="4bQ-vB-T8r" id="akO-MR-Ul8"/>
+                <outlet property="_remarkLabel" destination="NdJ-8m-gPN" id="f6E-Hg-Uhm"/>
+            </connections>
+            <point key="canvasLocation" x="331.5" y="374.5"/>
+        </view>
+    </objects>
+</document>

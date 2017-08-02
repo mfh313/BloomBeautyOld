@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFFavoritesMainTittleView">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TsQ-0a-J92" customClass="MFSelecedButton">
+                    <rect key="frame" x="0.0" y="5" width="115" height="33"/>
+                    <color key="backgroundColor" red="1" green="0.47590245329999997" blue="0.73408320069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="ZKR-r4-scu"/>
+                        <constraint firstAttribute="width" constant="115" id="lav-jx-u1s"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQG-dw-g22" customClass="MFSelecedButton">
+                    <rect key="frame" x="140" y="6" width="115" height="33"/>
+                    <color key="backgroundColor" red="1" green="0.47590245329999997" blue="0.73408320069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gQG-dw-g22" firstAttribute="height" secondItem="TsQ-0a-J92" secondAttribute="height" id="6XC-cl-ubv"/>
+                <constraint firstItem="TsQ-0a-J92" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LDl-ME-7oX"/>
+                <constraint firstItem="gQG-dw-g22" firstAttribute="centerY" secondItem="TsQ-0a-J92" secondAttribute="centerY" id="W8M-MN-uoV"/>
+                <constraint firstAttribute="trailing" secondItem="gQG-dw-g22" secondAttribute="trailing" id="XvT-Vp-Yqh"/>
+                <constraint firstItem="gQG-dw-g22" firstAttribute="width" secondItem="TsQ-0a-J92" secondAttribute="width" id="g63-gi-jUk"/>
+                <constraint firstItem="TsQ-0a-J92" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lCK-AF-7yG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnBestCollection" destination="gQG-dw-g22" id="CEZ-17-LeX"/>
+                <outlet property="btnGoods" destination="TsQ-0a-J92" id="Pa4-q3-bZU"/>
+            </connections>
+            <point key="canvasLocation" x="441" y="60.5"/>
+        </view>
+    </objects>
+</document>

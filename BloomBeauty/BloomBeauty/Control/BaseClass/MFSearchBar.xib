@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFSearchBar">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="47"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kr6-sQ-b0n">
+                    <rect key="frame" x="0.0" y="8.5" width="430" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="GMV-t1-m9W"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_icon" translatesAutoresizingMaskIntoConstraints="NO" id="PQy-XP-iGx">
+                    <rect key="frame" x="20" y="16" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="1XD-ia-Y7m"/>
+                        <constraint firstAttribute="height" constant="15" id="Ofk-Ha-m5E"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搜索" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVZ-KP-Xkw">
+                    <rect key="frame" x="45" y="14" width="31" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" id="AWr-XY-QrO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ah-Z2-J8c">
+                    <rect key="frame" x="45" y="12.5" width="355" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="Naf-Qu-Cod"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="pZ2-pE-A8C"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFD-xE-iGC">
+                    <rect key="frame" x="400" y="3.5" width="30" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="1fo-Yb-EuB"/>
+                        <constraint firstAttribute="height" constant="40" id="pKh-IF-dLC"/>
+                    </constraints>
+                    <state key="normal" image="zbl09"/>
+                    <connections>
+                        <action selector="onClickSmallDeleteBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="zEA-J3-zzz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuS-CM-nrH">
+                    <rect key="frame" x="430" y="8.5" width="50" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="bbc-au-edN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.91372549020000005" green="0.21960784310000001" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickCancelBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="NF6-Mw-AzE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="kr6-sQ-b0n" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5PD-Ep-s7k"/>
+                <constraint firstItem="qFD-xE-iGC" firstAttribute="centerY" secondItem="6ah-Z2-J8c" secondAttribute="centerY" id="NBG-3d-bbR"/>
+                <constraint firstItem="kr6-sQ-b0n" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="NOe-24-PVf"/>
+                <constraint firstItem="QVZ-KP-Xkw" firstAttribute="leading" secondItem="PQy-XP-iGx" secondAttribute="trailing" constant="10" id="Wuw-Xf-qoU"/>
+                <constraint firstItem="QVZ-KP-Xkw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="XID-8V-0Ze"/>
+                <constraint firstItem="RuS-CM-nrH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="c4T-7L-Ld9"/>
+                <constraint firstItem="qFD-xE-iGC" firstAttribute="trailing" secondItem="kr6-sQ-b0n" secondAttribute="trailing" id="fZc-Yp-OGK"/>
+                <constraint firstItem="qFD-xE-iGC" firstAttribute="leading" secondItem="6ah-Z2-J8c" secondAttribute="trailing" id="fxa-dX-gWh"/>
+                <constraint firstItem="PQy-XP-iGx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="hS2-LC-9xV"/>
+                <constraint firstItem="RuS-CM-nrH" firstAttribute="leading" secondItem="kr6-sQ-b0n" secondAttribute="trailing" id="oBu-1f-zlT"/>
+                <constraint firstAttribute="trailing" secondItem="RuS-CM-nrH" secondAttribute="trailing" id="qpZ-EB-EAF"/>
+                <constraint firstItem="6ah-Z2-J8c" firstAttribute="leading" secondItem="QVZ-KP-Xkw" secondAttribute="leading" id="xHd-Ko-lvZ"/>
+                <constraint firstItem="6ah-Z2-J8c" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xbA-Y2-pq0"/>
+                <constraint firstItem="PQy-XP-iGx" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xfk-iF-zyE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_cancelBtn" destination="RuS-CM-nrH" id="J4j-ia-UUs"/>
+                <outlet property="_deleteBtn" destination="qFD-xE-iGC" id="0Vk-yO-PK6"/>
+                <outlet property="_inputTextField" destination="6ah-Z2-J8c" id="2NV-u6-mwv"/>
+                <outlet property="_placeHolderLabel" destination="QVZ-KP-Xkw" id="4ka-1V-c89"/>
+                <outlet property="_searchBackgroundView" destination="kr6-sQ-b0n" id="4G5-Fc-H3L"/>
+            </connections>
+            <point key="canvasLocation" x="254" y="271.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="search_icon" width="15" height="15"/>
+        <image name="zbl09" width="9" height="10"/>
+    </resources>
+</document>

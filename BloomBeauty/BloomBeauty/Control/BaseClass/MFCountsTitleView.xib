@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFCountsTitleView">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NA8-5U-gKB">
+                    <rect key="frame" x="201" y="14" width="0.0" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="8aj-jM-8k3"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" id="fc6-2T-Loi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.89411764705882346" green="0.27450980392156865" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wm2-Wu-liL" customClass="MFUIButton">
+                    <rect key="frame" x="214" y="0.0" width="126" height="49"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77m-sY-Jba">
+                            <rect key="frame" x="0.0" y="14" width="0.0" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="HgT-Bv-0en"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" id="Nlw-Pt-KcQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down" translatesAutoresizingMaskIntoConstraints="NO" id="sge-zT-ajh">
+                            <rect key="frame" x="8" y="21" width="9" height="6"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="6" id="N3f-K2-1VN"/>
+                                <constraint firstAttribute="width" constant="9" id="gur-ix-aha"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="0ej-SR-BFO"/>
+                        <constraint firstItem="77m-sY-Jba" firstAttribute="leading" secondItem="wm2-Wu-liL" secondAttribute="leading" id="DbA-Li-RQJ"/>
+                        <constraint firstItem="77m-sY-Jba" firstAttribute="centerY" secondItem="wm2-Wu-liL" secondAttribute="centerY" id="EYi-z7-l1K"/>
+                        <constraint firstItem="sge-zT-ajh" firstAttribute="centerY" secondItem="77m-sY-Jba" secondAttribute="centerY" id="adb-Cb-EYy"/>
+                        <constraint firstAttribute="width" constant="126" id="dAN-Ep-q1P"/>
+                        <constraint firstItem="sge-zT-ajh" firstAttribute="leading" secondItem="77m-sY-Jba" secondAttribute="trailing" constant="8" id="jeV-ef-Rf7"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0ej-SR-BFO"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="onClickBrandFilterBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZF7-4J-Q8y"/>
+                    </connections>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wm2-Wu-liL" secondAttribute="bottom" id="0KN-Is-NpK"/>
+                <constraint firstItem="NA8-5U-gKB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2Ok-gG-Z78"/>
+                <constraint firstItem="wm2-Wu-liL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DAc-2p-mUs"/>
+                <constraint firstItem="wm2-Wu-liL" firstAttribute="leading" secondItem="NA8-5U-gKB" secondAttribute="trailing" constant="12.5" id="nAL-CH-xyb"/>
+                <constraint firstItem="NA8-5U-gKB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xxH-Fd-l5I"/>
+                <constraint firstItem="wm2-Wu-liL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yFi-1V-Zaf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_brandFilterBtn" destination="wm2-Wu-liL" id="N8M-UW-flO"/>
+                <outlet property="_seletedBrandLabel" destination="77m-sY-Jba" id="bbo-LM-yum"/>
+                <outlet property="_titleLabel" destination="NA8-5U-gKB" id="XHB-ZG-I9Y"/>
+            </connections>
+            <point key="canvasLocation" x="462" y="33.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="down" width="9" height="5"/>
+    </resources>
+</document>

@@ -1,0 +1,386 @@
+{
+    "version": "1.0",
+    "bodyMadeFirstTip": {
+        "name": "定腰节线",
+        "descriptionImageName": "0 定腰节线.png",
+        "description": "手臂弯曲时手肘最低点对应腰部，用可调节的测量绳子定位水平一周。（一般为腰围最细处）。"
+    },
+    "bodyMade": [
+                 {
+                 "key": "heigth",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "从头顶水平线垂直量到脚后跟的长度。",
+                 "descriptionImageName": "1 身高.png",
+                 "remark": "身高"
+                 },
+                 {
+                 "key": "neckLine",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "皮尺靠近前领窝垫一根食指，绕颈量一周的长度为颈围",
+                 "descriptionImageName": "2 颈围.png",
+                 "remark": "颈围"
+                 },
+                 {
+                 "key": "totalShoulder",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "皮尺由左肩骨的端点（肩端点）经颈椎骨下方，成弧线量到右肩端点的长度",
+                 "descriptionImageName": "3 总肩宽.png",
+                 "remark": "总肩宽"
+                 },
+                 {
+                 "key": "backShoulderWidth",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "找到手臂下垂时手臂与后背夹缝的最高点（后腋点），从左后腋点水平量到右后腋点的长度。",
+                 "descriptionImageName": "4 后背宽.png",
+                 "remark": "后背宽"
+                 },
+                 {
+                 "key": "frontShoulder",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "由右肩骨的端点（肩端点）经过锁骨，拉直量到左肩骨的端点的长度",
+                 "descriptionImageName": "5 前肩宽.png",
+                 "remark": "前肩宽"
+                 },
+                 {
+                 "key": "frontBreastWidth",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "手臂下垂时手臂与前胸夹缝的最高点（前腋点），从右前腋点水平量到左前腋点的长度。",
+                 "descriptionImageName": "6 前胸宽.png",
+                 "remark": "前胸宽"
+                 },
+                 {
+                 "key": "breastLine",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "围绕胸部最丰满处内垫一根食指不松不紧水平测量一周的长度",
+                 "descriptionImageName": "7 胸围.png",
+                 "remark": "胸围"
+                 },
+                 {
+                 "key": "waistLine",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "围绕腰节线垫一根食指不松不紧水平测量一周的长度（要求被测量者自然放松）",
+                 "descriptionImageName": "8 腰围.png",
+                 "remark": "腰围"
+                 },
+                 {
+                 "key": "hipLine",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "围绕臀部最丰满处垫一根食指不松不紧水平测量一周的长度。",
+                 "descriptionImageName": "9 臀围.png",
+                 "remark": "臀围"
+                 },
+                 {
+                 "key": "upperSitLine",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "在腰节线至臀围线的1/2处垫一根食指，水平量一周的长度。",
+                 "descriptionImageName": "10 上坐围.png",
+                 "remark": "上坐围"
+                 },
+                 {
+                 "key": "thighRootLine",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "围绕大腿根部最丰满处不松不紧水平测量一周的长度",
+                 "descriptionImageName": "11 大腿根围.png",
+                 "remark": "大腿根围"
+                 },
+                 {
+                 "key": "kneeLine",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "围绕膝盖骨最突出处不松不紧水平测量一周的长度",
+                 "descriptionImageName": "12 膝围.png",
+                 "remark": "膝围"
+                 },
+                 {
+                 "key": "shankLine",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "围绕小腿肚最丰满处不松不紧水平测量一周的长度",
+                 "descriptionImageName": "13 小腿围.png",
+                 "remark": "小腿围"
+                 },
+                 {
+                 "key": "breastHeigth",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "由颈侧与肩线最高处的“交点”（肩颈点）紧贴皮肤量到胸高（BP）点的长度",
+                 "descriptionImageName": "14 胸高.png",
+                 "remark": "胸高"
+                 },
+                 {
+                 "key": "frontWaistLength",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "从颈侧与肩线最高处的“交点”（肩颈点），经胸高点垂直紧贴皮肤量至腰节线的长度 ",
+                 "descriptionImageName": "15 前腰节长.png",
+                 "remark": "前腰节长"
+                 },
+                 {
+                 "key": "backMiddleWaistLength",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "由低头突出的颈椎骨处，沿脊椎骨紧贴皮肤量至腰节线的长度。",
+                 "descriptionImageName": "16 后中腰长.png",
+                 "remark": "后中腰长"
+                 },
+                 {
+                 "key": "backWaistLength",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "从颈侧与肩线最高处的“交点”（肩颈点）开始，经后背垂直紧贴皮肤量至腰节线的长度",
+                 "descriptionImageName": "17 后腰节长.png",
+                 "remark": "后腰节长"
+                 },
+                 {
+                 "key": "crotch",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "由腰节线后腰中点，经过裆底不松不紧测量至腰节线前腰中点的长度",
+                 "descriptionImageName": "18 通裆.png",
+                 "remark": "通裆"
+                 },
+                 {
+                 "key": "waistLength",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "沿着腰节线侧面垂直量到脚底板的长度。",
+                 "descriptionImageName": "19 腰节高.png",
+                 "remark": "腰节高"
+                 },
+                 {
+                 "key": "armLength",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "由右肩骨的端点（肩端点）经手臂外侧，通过肘位中部测量至腕关节的长度",
+                 "descriptionImageName": "20 臂长.png",
+                 "remark": "臂长"
+                 },
+                 {
+                 "key": "upperArmLength",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "围绕上臂最丰满处不松不紧水平测量一周的长度",
+                 "descriptionImageName": "21 上臂围.png",
+                 "remark": "上臂围"
+                 },
+                 {
+                 "key": "elbowLine",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "围绕肘关节位不松不紧水平测量一周的长度",
+                 "descriptionImageName": "22 肘围.png",
+                 "remark": "肘围"
+                 },
+                 {
+                 "key": "wristLine",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "围绕腕关节上方骨头处水平量一周的长度",
+                 "descriptionImageName": "23 手腕围.png",
+                 "remark": "手腕围"
+                 },
+                 {
+                 "key": "trousersWaistLine",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "用特定的腰头工具，扣到顾客觉得舒适的位置（高度及水平情况），这个位置所指示的长度就是成衣裤腰围。",
+                 "descriptionImageName": "24 裤腰围.png",
+                 "remark": "裤腰围"
+                 },
+                 {
+                 "key": "backWaistHeigth",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "用特定的腰头工具，扣到顾客觉得舒适的位置（高度及水平情况），皮尺由此腰头工具后中上口垂直量至腰节线的长度 ",
+                 "descriptionImageName": "25 后腰高.png",
+                 "remark": "后腰高"
+                 },
+                 {
+                 "key": "frontWaistHeigth",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "用特定的腰头工具，扣到顾客觉得舒适的位置（高度及水平情况），皮尺由此腰头工具前中上口垂直量至腰节线的长度",
+                 "descriptionImageName": "26 前腰高.png",
+                 "remark": "前腰高"
+                 },
+                 {
+                 "key": "waistHipHeigth",
+                 "unit": "cm",
+                 "unitDesc": "厘米",
+                 "description": "腰节线至臀围水平线的垂直距离",
+                 "descriptionImageName": "27 腰臀高.png",
+                 "remark": "腰臀高"
+                 },
+                 {
+                 "key": "shoulderInclination",
+                 "unit": "angle",
+                 "unitDesc": "度",
+                 "description": "肩颈点、肩端点的连线和水平线之间的角度（借用工具）",
+                 "descriptionImageName": "28 肩斜度.png",
+                 "remark": "肩斜度"
+                 }
+                 ],
+    "underWear": [
+                  {
+                  "key": "underwearClub",
+                  "titleDescription": "您的内衣杯型是？",
+                  "titleDesc": "内衣杯型",
+                  "questions": [
+                                {
+                                "title": "A罩杯",
+                                "description": "A罩杯",
+                                "match": "A"
+                                },
+                                {
+                                "title": "B罩杯",
+                                "description": "B罩杯",
+                                "match": "B"
+                                },
+                                {
+                                "title": "C罩杯",
+                                "description": "C罩杯",
+                                "match": "C"
+                                },
+                                {
+                                "title": "D罩杯",
+                                "description": "D罩杯",
+                                "match": "D"
+                                },
+                                {
+                                "title": "E罩杯",
+                                "description": "E罩杯",
+                                "match": "E"
+                                },
+                                {
+                                "title": "F罩杯",
+                                "description": "F罩杯",
+                                "match": "F"
+                                }
+                                ]
+                  },
+                  {
+                  "key": "underwearSize",
+                  "titleDescription": "您的内衣底围是？",
+                  "titleDesc": "内衣底围",
+                  "questions": [
+                                {
+                                "title": "70(68-72cm)",
+                                "description": "70(68-72cm)",
+                                "match": "A"
+                                },
+                                {
+                                "title": "75(73-77cm)",
+                                "description": "75(73-77cm)",
+                                "match": "B"
+                                },
+                                {
+                                "title": "80(78-82cm)",
+                                "description": "80(78-82cm)",
+                                "match": "C"
+                                },
+                                {
+                                "title": "85(83-87cm)",
+                                "description": "85(83-87cm)",
+                                "match": "D"
+                                }
+                                ]
+                  },
+                  {
+                  "key": "solveProblem",
+                  "titleDescription": "您穿衣服主要想解决什么问题？（选中文字）",
+                  "titleResultDescription": "您穿衣服主要想解决的问题？",
+                  "titleDesc": "穿衣想解决的问题",
+                  "solveModel": {
+                  "contents": [
+                               {
+                               "pointType": "left",
+                               "pointX": "256",
+                               "pointY": "91",
+                               "realMatch": "A",
+                               "contentDescription": "脸大"
+                               },
+                               {
+                               "pointType": "left",
+                               "pointX": "209",
+                               "pointY": "193",
+                               "realMatch": "B",
+                               "contentDescription": "手臂粗"
+                               },
+                               {
+                               "pointType": "left",
+                               "pointX": "237",
+                               "pointY": "241",
+                               "realMatch": "C",
+                               "contentDescription": "胸小"
+                               },
+                               {
+                               "pointType": "left",
+                               "pointX": "238",
+                               "pointY": "355",
+                               "realMatch": "D",
+                               "contentDescription": "小肚腩"
+                               },
+                               {
+                               "pointType": "left",
+                               "pointX": "221",
+                               "pointY": "464",
+                               "realMatch": "E",
+                               "contentDescription": "腿粗"
+                               },
+                               {
+                               "pointType": "right",
+                               "pointX": "469",
+                               "pointY": "129",
+                               "realMatch": "F",
+                               "contentDescription": "脖子短"
+                               },
+                               {
+                               "pointType": "right",
+                               "pointX": "527",
+                               "pointY": "231",
+                               "realMatch": "G",
+                               "contentDescription": "胸大"
+                               },
+                               {
+                               "pointType": "right",
+                               "pointX": "510",
+                               "pointY": "320",
+                               "realMatch": "H",
+                               "contentDescription": "腰粗"
+                               },
+                               {
+                               "pointType": "right",
+                               "pointX": "550",
+                               "pointY": "399",
+                               "realMatch": "I",
+                               "contentDescription": "臀大"
+                               },
+                               {
+                               "pointType": "right",
+                               "pointX": "550",
+                               "pointY": "626",
+                               "realMatch": "J",
+                               "contentDescription": "腿短"
+                               }
+                               ],
+                  "maxSelectedCount": 10,
+                  "minSelectedCount": 0,
+                  "contentImageWidth": 800,
+                  "contentImageHeight": 800,
+                  "imageUrl": "http://bloombeauty-fileserver.eeka.info/diagnosticImage/image1/problemWantToSolve.png",
+                  "contentDescriptionMaxWidth": 250
+                  }
+                  }
+                  ]
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFSalingProdouctSearchBlankView">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="440"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zbl56" translatesAutoresizingMaskIntoConstraints="NO" id="O5y-C6-Bn1">
+                    <rect key="frame" x="155" y="92" width="154" height="154"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="154" id="5iQ-dC-CIY"/>
+                        <constraint firstAttribute="height" constant="154" id="Qxf-U7-xmr"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="很抱歉，该商品不存在~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAr-t2-amY">
+                    <rect key="frame" x="151" y="276" width="162" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="O5y-C6-Bn1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UQl-z6-pQ4"/>
+                <constraint firstItem="zAr-t2-amY" firstAttribute="centerX" secondItem="O5y-C6-Bn1" secondAttribute="centerX" id="XmJ-5M-8L0"/>
+                <constraint firstItem="O5y-C6-Bn1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="92" id="e4F-tG-IIJ"/>
+                <constraint firstItem="zAr-t2-amY" firstAttribute="top" secondItem="O5y-C6-Bn1" secondAttribute="bottom" constant="30" id="her-4u-r6i"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-69" y="69"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="zbl56" width="154" height="154"/>
+    </resources>
+</document>
