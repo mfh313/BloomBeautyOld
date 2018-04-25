@@ -55,7 +55,7 @@
     
 #ifdef DEBUG
     if ([CommonUtil isNull:name] && [CommonUtil isNull:password]) {
-        name = @"P10198";
+        name = @"P10663";
         password = @"eeka2012";
     }
 #else

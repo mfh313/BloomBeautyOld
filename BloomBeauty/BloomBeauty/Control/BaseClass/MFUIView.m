@@ -31,6 +31,8 @@
     return view;
 }
 
-
+- (CGSize)intrinsicContentSize {
+    return UILayoutFittingExpandedSize;
+}
 
 @end
