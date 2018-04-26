@@ -965,6 +965,7 @@
 		ACA831FE1EAAE0C5007DBE07 /* MFCommodityDetailImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA831FC1EAAE0C5007DBE07 /* MFCommodityDetailImageView.m */; };
 		ACA832001EAAE252007DBE07 /* MFCommodityDetailImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA831FF1EAAE252007DBE07 /* MFCommodityDetailImageView.xib */; };
 		ACA832011EAAE252007DBE07 /* MFCommodityDetailImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA831FF1EAAE252007DBE07 /* MFCommodityDetailImageView.xib */; };
+		ACAA3B832091EA010008A2DB /* UIAlertController+autorotate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAA3B822091EA010008A2DB /* UIAlertController+autorotate.m */; };
 		ACADA61C1EA302860037D09F /* MFSalingProdouctSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACADA61B1EA302860037D09F /* MFSalingProdouctSearchViewController.m */; };
 		ACADA61D1EA302860037D09F /* MFSalingProdouctSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACADA61B1EA302860037D09F /* MFSalingProdouctSearchViewController.m */; };
 		ACADA6201EA304730037D09F /* MFSalingProdouctSearchBlankView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACADA61F1EA304730037D09F /* MFSalingProdouctSearchBlankView.m */; };
@@ -1963,6 +1964,8 @@
 		ACA831FB1EAAE0C5007DBE07 /* MFCommodityDetailImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFCommodityDetailImageView.h; sourceTree = "<group>"; };
 		ACA831FC1EAAE0C5007DBE07 /* MFCommodityDetailImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFCommodityDetailImageView.m; sourceTree = "<group>"; };
 		ACA831FF1EAAE252007DBE07 /* MFCommodityDetailImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFCommodityDetailImageView.xib; sourceTree = "<group>"; };
+		ACAA3B812091EA010008A2DB /* UIAlertController+autorotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+autorotate.h"; sourceTree = "<group>"; };
+		ACAA3B822091EA010008A2DB /* UIAlertController+autorotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+autorotate.m"; sourceTree = "<group>"; };
 		ACADA61A1EA302860037D09F /* MFSalingProdouctSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSalingProdouctSearchViewController.h; sourceTree = "<group>"; };
 		ACADA61B1EA302860037D09F /* MFSalingProdouctSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSalingProdouctSearchViewController.m; sourceTree = "<group>"; };
 		ACADA61E1EA304730037D09F /* MFSalingProdouctSearchBlankView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSalingProdouctSearchBlankView.h; sourceTree = "<group>"; };
@@ -4552,6 +4555,8 @@
 				AE4446D31BEAE4FB00470B39 /* BloomBeauty-pch.pch */,
 				AE4446DC1BEAE4FB00470B39 /* main.m */,
 				AE4446DB1BEAE4FB00470B39 /* Info.plist */,
+				ACAA3B812091EA010008A2DB /* UIAlertController+autorotate.h */,
+				ACAA3B822091EA010008A2DB /* UIAlertController+autorotate.m */,
 				AC83FEA31DC1CA15007DED6C /* bloombeautytest-Info.plist */,
 				AC522FA71CB77E0000A559B8 /* blank.wav */,
 				AE4446C11BEAE4FB00470B39 /* Assets.xcassets */,
@@ -4989,6 +4994,7 @@
 					AEA0B9531BD0C4F1006EFE1A = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = 2C97V99SA2;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -6218,6 +6224,7 @@
 				AC7BD4CF1E65292D00B07DCE /* NSObjectSafe.m in Sources */,
 				AE2B18271C2548A20096BF51 /* ZXGridSampler.m in Sources */,
 				ACA6D6931DA89817004E3B70 /* YTKChainRequestAgent.m in Sources */,
+				ACAA3B832091EA010008A2DB /* UIAlertController+autorotate.m in Sources */,
 				AC58BA961CB9DBEA006EB6F4 /* MFRoundTextField.m in Sources */,
 				AC7D1ED41E1F2A63005D8270 /* MFCustomerInfoOccupationSelectView.m in Sources */,
 				AC90725E1DE69A9700401141 /* MASViewAttribute.m in Sources */,
@@ -6592,8 +6599,10 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = bloombeauty.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: xu yiheng (8BZ9HQD624)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xu yiheng (8BZ9HQD624)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6612,8 +6621,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.eeka.bloombeauty;
 				PRODUCT_NAME = bloombeauty;
-				PROVISIONING_PROFILE = "c31ef31f-b6c4-4480-9d45-541924c04d14";
-				PROVISIONING_PROFILE_SPECIFIER = "bloombeauty开发描述文件";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -6625,8 +6634,9 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = bloombeauty.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: SHENZHEN EEKA FASHION CO.,LTD";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: SHENZHEN EEKA FASHION CO.,LTD";
-				DEVELOPMENT_TEAM = 2C97V99SA2;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6645,8 +6655,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.eeka.bloombeauty;
 				PRODUCT_NAME = bloombeauty;
-				PROVISIONING_PROFILE = "80fd753d-2914-4850-9e99-6512e772b731";
-				PROVISIONING_PROFILE_SPECIFIER = "bloombeauty发布描述文件";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
