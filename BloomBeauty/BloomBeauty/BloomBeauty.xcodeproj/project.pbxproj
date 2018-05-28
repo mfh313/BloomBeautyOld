@@ -4990,6 +4990,7 @@
 				TargetAttributes = {
 					AC83FC411DC1CA15007DED6C = {
 						DevelopmentTeam = 2C97V99SA2;
+						ProvisioningStyle = Automatic;
 					};
 					AEA0B9531BD0C4F1006EFE1A = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -6442,9 +6443,10 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = bloombeauty.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: xu yiheng (8BZ9HQD624)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xu yiheng (8BZ9HQD624)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 2C97V99SA2;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6467,8 +6469,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.eeka.bloombeauty;
 				PRODUCT_NAME = bloombeautytest;
-				PROVISIONING_PROFILE = "cba30df8-3993-440d-8f56-13280d857bff";
-				PROVISIONING_PROFILE_SPECIFIER = "bloombeauty开发描述文件";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -6480,8 +6482,9 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = bloombeauty.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: SHENZHEN EEKA FASHION CO.,LTD";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: SHENZHEN EEKA FASHION CO.,LTD";
-				DEVELOPMENT_TEAM = 2C97V99SA2;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6504,8 +6507,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.eeka.bloombeauty;
 				PRODUCT_NAME = bloombeautytest;
-				PROVISIONING_PROFILE = "80fd753d-2914-4850-9e99-6512e772b731";
-				PROVISIONING_PROFILE_SPECIFIER = "bloombeauty发布描述文件";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
